@@ -1,11 +1,25 @@
-$breakpoints: (
-  'xs-phone': 320px,
-  'phone': 480px,
-  'tablet': 768px,
-  'desktop': 1024px,
-  'widescreen': 1200px
-);
+/*
+Theme Name: Base
+Author: Anonymous
+Author URI:
+Version: 1
+Description: Base theme for Wordpress
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base
+Tags: one-column, two-columns
+Theme URI:
+*/
 
+// devices viewport width starts at:
+$breakpoints: (
+  xs-phone: 320px,
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  widescreen: 1300px
+);
+ 
 // keywords
 $media-expressions: (
   'screen': 'screen',
@@ -27,8 +41,13 @@ $media-expressions: (
 
 @import 'base/mixins';
 @import 'base/helpers';
+@import "base/wp-reset";
 
 
 #wrapper {
-	max-width: 1000px;
+  max-width: 1000px;
+}
+body{
+  background: red;
+  
 }
